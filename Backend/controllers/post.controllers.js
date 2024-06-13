@@ -1,9 +1,9 @@
-import { REFUSED } from "dns";
+
 import Post from "../models/post.model.js";
 import User from "../models/user.model.js";
 import { v2 as cloudinary } from "cloudinary";
 import Notification from "../models/notification.model.js";
-import { create } from "domain";
+
 
 export const createPost = async (req, res) => {
   try {
@@ -34,7 +34,7 @@ export const createPost = async (req, res) => {
 
 export const deletePOST = async (req, res) => {
   try {
-    const post = await Post.$where.findById(req.params.id);
+    const post = await Post.findById(req.params.id);
     if (!post) {
       return res.status(404).json({ error: "Post not found" });
     }
