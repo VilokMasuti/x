@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "Backend/index.js",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon Backend/index.js",
-    "start": "cross-env NODE_ENV=production node Backend/index.js",
-    "postinstall": "npm install --prefix Frontend",
-    "build": "npm run build:frontend && npm install && npm run build --prefix Frontend",
-    "build:frontend": "cd Frontend && npm install && npm run build"
-  },
+"scripts": {
+		"dev": " cross-env  NODE_ENV=development nodemon Backend/index.js",
+		"start": " cross-env NODE_ENV=production node Backend/index.js",
+		"build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
+	},
+
   "keywords": [],
   "author": "",
   "type": "module",
