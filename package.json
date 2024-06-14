@@ -4,8 +4,8 @@
   "description": "",
   "main": "Backend/server.js",
 "scripts": {
-  "dev": " nodemon Backend/index.js",
-  "start": " node Backend/index.js"
+  "dev": " nodemon Backend/server.js",
+  "start": " node Backend/server.js"
 },
 
   "keywords": [],
