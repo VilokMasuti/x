@@ -36,7 +36,7 @@ app.use("/api/notifications", notificationRoutes);
 
 if (process.env.NODE_ENV === "production") {
   // Serve the frontend build files
-  app.use(express.static(path.join(__dirname, "/Frontend/dist")));
+  app.use(express.static(path.join(__dirname,"/Frontend/dist")));
 
   // Serve the index.html file for all other routes
   app.get("*", (req, res) => {
