@@ -13,6 +13,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist'  // Ensure this matches the "distDir" in vercel.json
+    outDir: 'Frontend/dist', // Adjust the output directory
+    emptyOutDir: true // Clear the output directory before building
   }
 })
