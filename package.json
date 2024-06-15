@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon Backend/api/index.js",
     "start": "node Backend/api/index.js",
-    "build": "npm install "
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
