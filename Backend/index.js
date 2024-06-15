@@ -34,15 +34,15 @@ app.use("/api/users", userRoutes);
 app.use("/api/post", postRoutes);
 app.use("/api/notifications", notificationRoutes);
 
-// if (process.env.NODE_ENV === "production") {
-//   // Serve the frontend build files
-//   app.use(express.static(path.join(__dirname,"/Frontend/dist")));
+if (process.env.NODE_ENV === "production") {
+  // Serve the frontend build files
+  app.use(express.static(path.join(__dirname,"/Frontend/dist")));
 
-//   // Serve the index.html file for all other routes
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "Frontend", "dist", "index.html"));
-//   });
-// }
+  // Serve the index.html file for all other routes
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "Frontend", "dist", "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
