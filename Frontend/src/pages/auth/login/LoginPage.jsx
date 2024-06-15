@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion';
+
 
 import XSvg from "../../../components/svgs/X";
 
@@ -49,10 +49,8 @@ const LoginPage = () => {
   };
 
   return (
-    <motion.div
-    initial={{ opacity: 0, scale: 1 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 5, delay: 2 }}
+    <div
+    
  
     className="max-w-screen-xl mx-auto flex h-screen">
       <div className="flex-1 hidden lg:flex items-center  justify-center">
@@ -99,7 +97,7 @@ const LoginPage = () => {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 export default LoginPage;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { motion } from "framer-motion";
+
 import XSvg from "../../../components/svgs/X";
 import { MdOutlineMail, MdPassword, MdDriveFileRenameOutline } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
@@ -52,19 +52,14 @@ const SignUpPage = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto flex h-screen px-10">
-      <motion.div
+      <div
         className="flex-1 hidden lg:flex items-center justify-center"
-        initial={{ opacity: 0, scale: 1 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 5, delay: 2 }}
+       
       >
         <XSvg className=" lg:w-2/3 fill-white" />
-      </motion.div>
-      <motion.div
-        className="flex-1 flex flex-col justify-center items-center"
-        initial={{ opacity: 0, scale: 1 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 5, delay: 2 }}
+      </div>
+      <div
+        
       >
         <form
           className="lg:w-2/3 mx-auto md:mx-20 flex gap-4 flex-col"
@@ -133,7 +128,7 @@ const SignUpPage = () => {
             </button>
           </Link>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };
