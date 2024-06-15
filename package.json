@@ -4,11 +4,9 @@
   "description": "",
   "main": "Backend/index.js",
   "scripts": {
-  "dev": "NODE_ENV=development nodemon Backend/index.js",
-		"start": " NODE_ENV=production  node Backend/index.js",
-    "build":  "npm install --prefix Frontend --production=false && cd /opt/render/project/src/Frontend && npm run build"
-
-	
+    "dev": "NODE_ENV=development nodemon Backend/index.js",
+    "start": " NODE_ENV=production  node Backend/index.js",
+    "build": "npm install --prefix Frontend --production=false && cd /opt/render/project/src/Frontend && npm run build"
   },
   "keywords": [],
   "author": "",
