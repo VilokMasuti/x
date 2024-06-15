@@ -1,4 +1,4 @@
-import * as express from "express";
+import  express from "express";
 import {protectRoute} from'../middleware/protectRoute.js'
  import{getUserProfile,followUnfollowUser, getSuggestedUsers, updateUser} from '../controllers/user.controller.js'
 

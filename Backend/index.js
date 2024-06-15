@@ -1,5 +1,5 @@
 import path from "path";
-import * as express from "express";// Modified import statement
+import express from "express";// Modified import statement
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from "cloudinary";
