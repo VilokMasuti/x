@@ -4,7 +4,7 @@ import { useState } from "react";
 import XSvg from "../../../components/svgs/X";
 import { MdOutlineMail, MdPassword, MdDriveFileRenameOutline } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
-import { useMutation, useQueryClient } from "react-query"; // corrected import
+import { useMutation, useQueryClient } from "@tanstack/react-query"; // corrected import
 import toast from "react-hot-toast";
 
 const SignUpPage = () => {
