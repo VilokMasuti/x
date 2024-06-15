@@ -1,4 +1,4 @@
-import express from "express.mjs";
+import * as express from "express";
 import { protectRoute } from "../middleware/protectRoute.js";
 import {
   commentOnPost,
