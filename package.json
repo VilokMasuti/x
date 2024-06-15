@@ -2,10 +2,10 @@
   "name": "x",
   "version": "1.0.0",
   "description": "",
-  "main": "Backend/index.js",
+  "main": "Backend/api/index.js",
   "scripts": {
-    "dev": "nodemon Backend/index.js",
-    "start": "node Backend/index.js",
+    "dev": "nodemon Backend/api/index.js",
+    "start": "node Backend/api/index.js",
     "build": "npm install "
   },
   "keywords": [],
