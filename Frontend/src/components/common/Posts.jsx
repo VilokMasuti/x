@@ -1,3 +1,4 @@
+
 /* eslint-disable react/prop-types */
 import Post from "./Post";
 import PostSkeleton from "../skeletons/PostSkeleton";
@@ -12,9 +13,9 @@ const Posts = ({ feedType,username,userId }) => {
       case "following":
         return "/api/post/following";
       case "posts":
-		return `/api/posts/user/${username}`;
+		return `/api/post/user/${username}`;
       case "likes":
-		return `/api/posts/likes/${userId}`;
+		return `/api/post/likes/${userId}`;
       default:
         return "/api/post/all";
     }

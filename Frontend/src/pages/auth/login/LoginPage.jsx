@@ -62,9 +62,9 @@ const LoginPage = () => {
         <form className="flex gap-4 flex-col" onSubmit={handleSubmit}>
           <XSvg className="w-24 lg:hidden fill-white" />
 
-          <p className="  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50  to-neutral-950 text-xl  md:base-regular mt-2 font-extrabold w-[300px]">
+          <p className="  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50  to-neutral-950 text-3xl  md:base-regular mt-2 font-extrabold w-[300px]">
             {" "}
-            WₑₗCₒₘₑ BₐCₖ ₚₗₑₐₛₑ ₑₙₜₑᵣ Yₒᵤᵣ Dₑₜₐᵢₗₛ{" "}
+   LETS GO..!
           </p>
           <label className="input input-bordered rounded flex items-center gap-2">
             <MdOutlineMail />

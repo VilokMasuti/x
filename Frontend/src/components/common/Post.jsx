@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/prop-types */
 import { FaRegComment } from "react-icons/fa";
 import { BiRepost } from "react-icons/bi";
@@ -16,10 +17,17 @@ const Post = ({ post }) => {
   const [comment, setComment] = useState("");
   const { data: authUser } = useQuery({ queryKey: ["authUser"] });
   const queryClient = useQueryClient();
-  const postOwner = post.user;
+
+  // Add null checks for post and post.user
+  if (!post || !post.user || !authUser) {
+	return <div></div>; // Or handle loading state accordingly
+    }
+  
+    const postOwner = post.user;
   const isLiked = post.likes.includes(authUser._id);
 
   const isMyPost = authUser._id === post.user._id;
+  console.log(post.user._id)
 
   const formattedDate = formatPostDate(post.createdAt);
 
