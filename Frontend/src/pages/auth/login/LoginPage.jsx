@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 import XSvg from "../../../components/svgs/X";
+import {motion} from 'framer-motion'
 
 import { MdOutlineMail } from "react-icons/md";
 import { MdPassword } from "react-icons/md";
@@ -49,17 +49,23 @@ const LoginPage = () => {
   };
 
   return (
-    <div
+    <motion.div className="max-w-screen-xl mx-auto flex h-screen"
+    initial={{ opacity: 0, scale: 1 }}
+		animate={{ opacity: 1, scale: 1 }}
+		transition={{ duration: 3, delay: 2}}
     
- 
-    className="max-w-screen-xl mx-auto flex h-screen">
+    >
       <div className="flex-1 hidden lg:flex items-center  justify-center">
         <XSvg className="lg:w-2/3 fill-white" />
       </div>
       <div className="flex-1 flex flex-col justify-center items-center">
         <form className="flex gap-4 flex-col" onSubmit={handleSubmit}>
           <XSvg className="w-24 lg:hidden fill-white" />
-          <h1 className="text-4xl font-extrabold text-white">{"Let's"} go.</h1>
+
+          <p className="  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50  to-neutral-950 text-xl  md:base-regular mt-2 font-extrabold w-[300px]">
+            {" "}
+            WₑₗCₒₘₑ BₐCₖ ₚₗₑₐₛₑ ₑₙₜₑᵣ Yₒᵤᵣ Dₑₜₐᵢₗₛ{" "}
+          </p>
           <label className="input input-bordered rounded flex items-center gap-2">
             <MdOutlineMail />
             <input
@@ -97,7 +103,7 @@ const LoginPage = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default LoginPage;
